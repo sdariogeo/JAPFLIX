@@ -14,18 +14,33 @@
 
 <body class="bg-dark">
   <main>
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body" id="selectedMoviesInfo">  </div>
+      
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> More:
+        </button>
+        <ul class="dropdown-menu" id="menudesplegable">
+  </ul>
+</div>
+</div>
     <div class="text-center container">
       <div class="row py-lg-3">
         <div class="col-lg-6 col-md-8 mx-auto">
           <h1 class="fw-light"><img src="img/japflix.png" alt=""></h1>
-          <input type="search" class="form-control" name="buscar" id="inputBuscar" placeholder="Ej.: The Lion King">
+          <input type="search" class="form-control" name="buscar" id="inputBuscar" placeholder="Ej.: The Return of the King">
           <button class="btn btn-primary m-2" id="btnBuscar">Buscar</button>
         </div>
       </div>
     </div>
+    
 
     <div class="album">
       <ul class="list-group container" id="lista">
+        
       </ul>
     </div>
   </main>
@@ -42,7 +57,10 @@
   </footer>
 
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="./js/index.js">
+  /* <script src="./js/index2.js"> */
 
+</script>
 </body>
 
 </html>
